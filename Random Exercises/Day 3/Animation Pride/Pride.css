@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    #e50000,
+    #ff8d00,
+    #ffed00,
+    #02b12e,
+    #004cff,
+    #770088
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  display: block;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 150px;
+  text-shadow: 4px 4px 12px rgb(77, 75, 75);
+  animation: reveal 3500ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 350px;
+  height: auto;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}

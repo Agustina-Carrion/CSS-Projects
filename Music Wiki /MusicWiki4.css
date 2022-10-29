@@ -1,0 +1,180 @@
+/* css for grid example*/
+
+* {
+  font-family: verdana;
+}
+
+#page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 110px 100px 1fr 1fr;
+  height: 200vh;
+  overflow: scroll;
+  grid-template-areas:
+    "sidemenu   menu    menu    menu"
+    "sidemenu   content content content"
+    "sidemenu   content content content"
+    "sidemenu   content content content";
+}
+
+.wireframe {
+  font-family: verdana;
+  font-size: 16px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(162, 225, 178, 1);
+  border-left: 2px solid rgb(239, 235, 235);
+}
+
+aside {
+  grid-area: sidemenu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid gray;
+  background-color: rgba(88, 146, 134, 1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid gray;
+  padding: 11px;
+  margin: 0;
+  text-align: center;
+}
+
+.logo i {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(240, 236, 236);
+  padding-left: 15px;
+}
+
+nav {
+  grid-area: menu;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid gray;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 40px;
+  margin: 0;
+}
+
+li.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 22px;
+  text-decoration: none;
+  color: rgba(32, 73, 109, 1);
+  border-right: 2px solid gray;
+  border-left: 2px solid rgb(239, 235, 235);
+}
+
+.nav-bar a {
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 25px;
+  color: rgba(32, 73, 109, 1);
+}
+
+li:first-child {
+  border-left: none;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+main {
+  grid-area: content;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 100px 350px 1fr;
+  border-top: 1px solid rgb(239, 235, 235);
+}
+
+.title {
+  height: 100px;
+}
+
+.title h1 {
+  font-size: 50px;
+  color: rgb(239, 235, 235);
+  text-align: start;
+}
+
+.border {
+  border-radius: 25px;
+  border: 2px solid rgb(239, 235, 235);
+  padding: 20px;
+  margin: 20px;
+}
+
+.big-form {
+  display: block;
+  position: relative;
+  height: 280px;
+  color: rgba(32, 73, 109, 1);
+  font-weight: bold;
+}
+
+input {
+  width: 45%;
+  border: none;
+  padding: 15px;
+  background-color: rgb(239, 235, 235);
+}
+
+input[id="song"] {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+}
+.song {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+input[id="info"] {
+  width: 97%;
+  padding: 60px;
+}
+
+.tiny-form {
+  height: 80px;
+  display: block;
+  position: relative;
+  color: rgba(32, 73, 109, 1);
+}
+
+.checkbox {
+  display: inline-block;
+}
+
+.checkbox-style {
+  font-weight: bold;
+}

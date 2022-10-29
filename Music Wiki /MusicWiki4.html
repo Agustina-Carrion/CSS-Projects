@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicWiki-NewEntry</title>
+    <link rel="stylesheet" href="MusicWiki4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <aside>
+        <div class="logo">
+          <i class="fa fa-bell fa-2xl"></i>
+          <h1>Logo</h1>
+        </div>
+      </aside>
+      <nav class="wireframe">
+        <ul class="nav-bar">
+          <li class="nav-item">
+            <i class="fa fa-home"></i><a href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-list"></i><a href="#">Artists</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-music"></i><a href="#">Rock</a>
+          </li>
+          <li class="nav-item active">
+            <i class="fa fa-music"></i><a href="#">Pop</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-music"></i><a href="#">R&B</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-music"></i><a href="#">Punk</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-music"></i><a href="#">Country</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-music"></i><a href="#">Other</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="wireframe">
+        <div class="title">
+          <h1>New Entry</h1>
+        </div>
+        <div class="basic-info">
+          <div class="border big-form">
+            <form>
+              <label for="artist">Artist</label><br />
+              <input type="text" id="artist" name="artist" />
+              <br />
+              <label for="song" class="song">Song</label><br />
+              <input type="text" id="song" name="song" />
+              <br />
+              <label for="info">Info</label><br />
+              <input type="text" id="info" name="info" />
+            </form>
+          </div>
+        </div>
+        <div class="form-style">
+          <div class="border tiny-form">
+            <form class="checkbox">
+              <label for="checkbox" class="checkbox-style">Style</label><br />
+              <input type="checkbox" id="music1" name="music1" value="Rock" />
+              <label for="music1">Rock</label>
+              <input type="checkbox" id="music2" name="music2" value="Pop" />
+              <label for="music2">Pop</label>
+              <input type="checkbox" id="music3" name="music3" value="Punk" />
+              <label for="music3">Punk</label>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

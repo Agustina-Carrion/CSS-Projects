@@ -1,0 +1,26 @@
+main {
+    width: 500px;
+    margin: 0 auto;
+    background-color: hsl(45, 70%, 80%);
+}
+h1 {font-family: Arial, Helvetica, sans-serif;
+color: blueviolet;
+text-align: center;}
+h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgb(218, 109, 251);
+text-align: center;}
+img {width: 400px;
+height:auto; margin-left:50px;}
+li {font-size: 20px;
+color:rgb(76, 76, 214);
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#Ingredients {color: darkmagenta;}
+#Preparation {color: rgb(0, 139, 72);}
+#Alternative {color:rgb(18, 120, 120); 
+margin-left:50px;}
+.Ingredient-list li {font-size: 15px;
+color: darkmagenta}
+.Preparation-list li {font-size: 15px;
+color: rgb(0, 139, 72);}
+div p {font-size: 20px; 
+    color:rgb(18, 120, 120);}

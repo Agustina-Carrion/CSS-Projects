@@ -1,0 +1,33 @@
+body {
+  /*center it*/
+  display: flex;
+  align-items: center;
+
+  /*visual quality*/
+  background-color: coral;
+  font-size: 80px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.day {
+  color: bisque;
+  text-align: center;
+}
+.night {
+  visibility: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+  .day {
+    visibility: hidden;
+  }
+  .night {
+    visibility: visible;
+    color: coral;
+    text-align: center;
+  }
+}
